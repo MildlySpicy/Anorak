@@ -1,12 +1,33 @@
 """Docstrings are dumb"""
 
-import praw
 import random
-import math
-from typing import Optional, Tuple, List, Union
+from typing import List, Union
+from BeepBoop import Bot
+from FireLines import SingForMe
 
 FULL_LIST = "SickRhymes.txt"
 SHORT_LIST = "ShortRhymes.txt"
+
+
+def plz_reply(bullet_bill: Bot, killer_koopa: SingForMe):
+  """Replys to the comments"""
+  for comment in bullet_bill.comments:
+    send = dumbstuff(str(comment.body), killer_koopa)
+    if send != '':
+      comment.reply(send)
+      
+
+def dumbstuff(comment: str, koopa: SingForMe) -> str:
+  """Creates the comment message"""
+  message = ''
+  lol = "\n\n Hi I am a bot. I don't work that well yet, ignore me please :)"
+
+  if 'me too thanks' in comment.lower():
+    message = koopa.rap_for_me() + lol
+  if 'metoothanks' in comment.lower():
+    message = koopa.rap_for_me().rstrip(" ") + lol
+  
+  return message
 
 
 def rap_god(filename: str) -> List[List[str]]:
@@ -14,7 +35,7 @@ def rap_god(filename: str) -> List[List[str]]:
   f = open(filename, "r")
   big_list = []
   count = 0
-
+  
   while count < 3:
     small_list = []
     empty = False
@@ -24,10 +45,10 @@ def rap_god(filename: str) -> List[List[str]]:
         small_list.append(line)
       else:
         empty = True
-
+    
     big_list.append(small_list)
     count += 1
-
+  
   return big_list
 
 
@@ -59,40 +80,9 @@ def talky_boi(lst: List[List[str]]) -> str:
     word = wordy_list[index]
     wordy_boi += word + " "
   return wordy_boi
-  
-
-def dumbstuff(comment: str) -> str:
-  """Creates the comment message"""
-  message = ''
-  lol = "\n\n Hi I am a bot. I don't work that well yet, ignore me please :)"
-
-  if 'me too thanks' in comment.lower():
-    message = 'meme too dank' + lol
-  if 'metoothanks' in comment.lower():
-    message = 'memetoodank' + lol
-
-  return message
 
 
 if __name__ == '__main__':
-  a = rap_god(SHORT_LIST)
-  print(a)
-  print("")
-  print("")
-  b = strip_n_lines(a)
-  print(b)
-  print("")
-  print("")
-  c = strip_recursive(a)
-  print(c)
-  print("")
-  print("")
-  
-  for _ in range(6):
-    print(talky_boi(c))
-    print("----")
-  
-  # for retarded_reply in multicomments:                  # Change this line for multi
-  #   send = dumbstuff(str(retarded_reply.body))
-  #   if send != '':
-  #     retarded_reply.reply(send)
+  Amanda = Bot("uoft")
+  Nancy = SingForMe(SHORT_LIST)
+  plz_reply(Amanda, Nancy)
