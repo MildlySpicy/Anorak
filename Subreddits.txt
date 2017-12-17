@@ -23,7 +23,6 @@ leagueoflegends
 LeagueOfMemes
 luigi_irl
 me_irl
-meirl
 MemeEconomy
 mildlyinteresting
 NatureIsFuckingLit
@@ -41,6 +40,7 @@ todayilearned
 TooMeIrlForMeIrl
 totallynotrobots
 UofT
+uwaterloo
 wholesomememes
 wholesomesneks
 yoshi_irl
