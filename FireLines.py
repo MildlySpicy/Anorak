@@ -49,9 +49,14 @@ class GiveMeMySubreddits(Line):
       word += "+" + sub
     return word[1:]
 
+  def __str__(self) -> str:
+    return "memes"
+
 
 if __name__ == '__main__':
-  mary = SingForMe(SHORT_LIST)
+  mary = GiveMeMySubreddits(SHORT_LIST)
 
-  for _ in range(100):
-    print(mary.rap_for_me())
+  # for _ in range(100):
+  #   print(mary.rap_for_me())
+
+  print(str(mary))

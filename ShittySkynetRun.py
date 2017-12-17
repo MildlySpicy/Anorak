@@ -19,7 +19,7 @@ def plz_reply(bullet_bill: Bot, killer_koopa: SingForMe):
 def dumbstuff(comment: str, koopa: SingForMe) -> str:
   """Creates the comment message"""
   message = ''
-  lol = "\n\n Hi I am a bot. \n\n I make rhymes. \n\n I don't work that well yet, ignore me please :)"
+  lol = "\n\n *^(Hi I am a bot. I make rhymes.)* \n\n *^(I don't work that well yet, ignore me please ;3)*"
 
   if 'me too thanks' in comment.lower():
     message = koopa.rap_for_me() + lol
