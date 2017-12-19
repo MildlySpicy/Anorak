@@ -3,10 +3,10 @@
 import praw
 
 bot = praw.Reddit(user_agent='KindaFeedingBot',
-                  client_id='H4z8QEXHvvtdpg',
-                  client_secret='lv6Zf_YAl2PEsHa_0QMfCygD5kc',
-                  username='Mildly-Spicy',
-                  password='J19900101t'
+                  client_id=,                   # add your own details
+                  client_secret=,
+                  username=, 
+                  password=
                   )
 
 subreddit = bot.subreddit('guttar')
