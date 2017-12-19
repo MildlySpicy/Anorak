@@ -2,9 +2,8 @@
 
 from BeepBoop import Bot
 from FireLines import SingForMe, GiveMeMySubreddits
-from time import gmtime, strftime
-# import prawcore
-# import praw
+import prawcore
+import praw
 
 FULL_LIST = "SickRhymes.txt"
 SHORT_LIST = "ShortRhymes.txt"
@@ -14,11 +13,27 @@ ALL_SUBS = "Allofthem.txt"
 
 def plz_reply(bullet_bill: Bot, killer_koopa: SingForMe):
   """Replys to the comments"""
+  # for comment in bullet_bill.comments:
+  #   send = dumbstuff(str(comment.body), killer_koopa)
+  #   if send != '':
+  #     print("sent a dumb comment")
+  #     comment.reply(send)
   for comment in bullet_bill.comments:
     send = dumbstuff(str(comment.body), killer_koopa)
     if send != '':
-      print("[" + strftime("%Y-%m-%d %H:%M:%S", gmtime()) + "] sent a dumb comment")
-      comment.reply(send)
+      try:
+        print("\nComment", "by", comment.author, "id", comment.id)
+        print(comment.body)
+        print("Attempting reply to comment", end="...")
+        comment.reply(send)
+        print(" done.")
+      except praw.exceptions.APIException:
+        print(" error!\nRate limited on comment", comment.id, "by", comment.author)
+      except prawcore.exceptions.Forbidden:
+        print(" error!\n403 error on comment", comment.id, "by", comment.author)
+      except prawcore.exceptions.ServerError:
+        print(" error!\nServer error on comment")
+      
 
 def dumbstuff(comment: str, koopa: SingForMe) -> str:
   """Creates the comment message"""
