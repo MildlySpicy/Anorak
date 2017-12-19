@@ -10,11 +10,11 @@ class Bot:
   comments = None
   
   def __init__(self, subs: str):
-    bot = praw.Reddit(user_agent = 'KindaFeeding',
-                      client_id = 'p_Y2_d0xk1Cm-Q',
-                      client_secret = '8q469EsTHNUyRxg2LSUYRVlLiOc',
-                      username = 'ShittySkynetBot',
-                      password = 'J19900101t'
+    bot = praw.Reddit(user_agent = 'KindaFeeding',    # add your own deets
+                      client_id = '',
+                      client_secret = '',
+                      username = '',
+                      password = ''
                       )
   
     self.subreddits = bot.subreddit(subs)
