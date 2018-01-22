@@ -14,7 +14,7 @@ class Bot:
                       client_id = 'p_Y2_d0xk1Cm-Q',
                       client_secret = '8q469EsTHNUyRxg2LSUYRVlLiOc',
                       username = 'ShittySkynetBot',
-                      password = 'J19900101t'
+                      password = 'Sh177y'
                       )
   
     self.subreddits = bot.subreddit(subs)
