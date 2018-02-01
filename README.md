@@ -23,9 +23,11 @@ To run it off your own reddit account:
 In case you do decide to use my account:
 Try to not do anything illegal or unethical, also I may or may not have gotten banned off of /r/meirl, /r/me_irl, /r/gaming and /r/Askreddit (they don't want bots on their subreddits).
 
+&nbsp;
+
 Best of luck,
 
-
+&nbsp;
 
 Jason Tang (MildlySpicy)
 
