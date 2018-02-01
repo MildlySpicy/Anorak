@@ -1,7 +1,13 @@
 # Anorak
 Bots and stuff
 ----------------
-WARNING: I have absolutely no idea how to use github properly, this is my first project on this site. I'm assuming I should put the intructions here or something. 
+***WARNING***: I have absolutely no idea how to use github properly, this is my first project on this site. I'm assuming I should put the intructions here or something. 
+
+## What it does:
+
+It's a reddit bot. It scans through comments of subreddits for the words "me too thanks" and replies with a random 3 word phrase that rhymes with "me too thanks", for example, "Bee shoo planks" (It usually doesn't make much sense).
+
+## Getting Started:
 
 Download and Install praw (the package that connects to the reddit api) at:
 http://praw.readthedocs.io/en/latest/getting_started/installation.html 
