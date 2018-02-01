@@ -21,13 +21,12 @@ To run it off your own reddit account:
   - Use the client id and client secret in the BeepBoop.py file
 
 In case you do decide to use my account:
-Try to not do anything illegal or unethical, also I may or may not have gotten banned off of /r/meirl, /r/me_irl, /r/gaming and /r/Askreddit. 
+Try to not do anything illegal or unethical, also I may or may not have gotten banned off of /r/meirl, /r/me_irl, /r/gaming and /r/Askreddit (they don't want bots on their subreddits).
 
 Best of luck,
 
 
-Jason Tang
 
-MildlySpicy
+Jason Tang (MildlySpicy)
 
 :3
