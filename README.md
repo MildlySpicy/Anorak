@@ -23,9 +23,8 @@ To run it off your own reddit account:
 In case you do decide to use my account:
 Try to not do anything illegal or unethical, also I may or may not have gotten banned off of /r/meirl, /r/me_irl, /r/gaming and /r/Askreddit. 
 
-If you have any questions or suggestions and stuff, email me at: fattyfatfatyogurt@gmail.com 
-I'll probably answer within a week hopefully. 
-
 Best of luck,
+
+Jason Tang
 MildlySpicy
 :3
