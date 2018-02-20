@@ -1,5 +1,3 @@
-"""Docstrings are dumb"""
-
 from BeepBoop import Bot
 from FireLines import SingForMe, GiveMeMySubreddits
 import prawcore
@@ -13,11 +11,6 @@ ALL_SUBS = "Allofthem.txt"
 
 def plz_reply(bullet_bill: Bot, killer_koopa: SingForMe):
   """Replys to the comments"""
-  # for comment in bullet_bill.comments:
-  #   send = dumbstuff(str(comment.body), killer_koopa)
-  #   if send != '':
-  #     print("sent a dumb comment")
-  #     comment.reply(send)
   for comment in bullet_bill.comments:
     send = dumbstuff(str(comment.body), killer_koopa)
     if send != '':

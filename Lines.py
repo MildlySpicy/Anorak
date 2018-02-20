@@ -1,5 +1,3 @@
-"""Parent class for all classes that need to create lists from text files"""
-
 import random
 from typing import List, Union
 
@@ -7,9 +5,8 @@ FULL_LIST = "SickRhymes.txt"
 SHORT_LIST = "ShortRhymes.txt"
 SUBREDDITS = "Subreddits.txt"
 
-
 class Line:
-  """Makes a crapton of lines"""
+  """Parent class for all classes that need to create lists from text files"""
 
   lst: List
   name: str
@@ -80,5 +77,3 @@ def simpler(lst: List[List[str]]) -> Union[List[str], List[List[str]]]:
 if __name__ == '__main__':
   mary = Line(SHORT_LIST)
   print(mary.lst)
-  # print(simpler(mary.lst))
-

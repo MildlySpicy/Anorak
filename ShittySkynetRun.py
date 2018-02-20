@@ -1,16 +1,11 @@
-"""Docstrings are dumb"""
-
 from BeepBoop import Bot
 from FireLines import SingForMe, GiveMeMySubreddits
 from time import gmtime, strftime
-# import prawcore
-# import praw
 
 FULL_LIST = "SickRhymes.txt"
 SHORT_LIST = "ShortRhymes.txt"
 SUBREDDITS = "Subreddits.txt"
 ALL_SUBS = "Allofthem.txt"
-
 
 def plz_reply(bullet_bill: Bot, killer_koopa: SingForMe):
   """Replys to the comments"""
