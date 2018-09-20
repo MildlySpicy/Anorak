@@ -33,6 +33,4 @@ Try to not do anything illegal or unethical, also I may or may not have gotten b
 
 Best of luck,
 
-Jason (MildlySpicy)
-
-:3
+Jason
